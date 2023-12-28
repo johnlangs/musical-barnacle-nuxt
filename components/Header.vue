@@ -1,5 +1,6 @@
 <script setup lang="js">
 import { ref } from 'vue'
+import SignIn from './SignIn.vue';
 
 const balance = ref(0)
 const accounts = ref(null)
@@ -38,6 +39,7 @@ onMounted(() => (
             <b> Accounts Connected: </b>
             {{ accounts }}
         </p>
+        <SignIn></SignIn>
     </section>
 </template>
 

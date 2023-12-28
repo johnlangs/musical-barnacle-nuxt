@@ -7,19 +7,15 @@ const accounts = ref(null)
 const loading = ref(true)
 
 const fetchData = async () => {
-    // loading.value = true
-
-    // const response = await useFetch()
-    // const data = await response.json()
-
-    // accounts.value = data.accounts.map((item) => item.name).join(", ")
-    // balance.value = "$ " + data.balance.toLocaleString()
-
-    // loading.value = false
+  loading.value = true
+  const { data } = await useFetch("/api/accountsList")
+  accounts.value = data.value.accounts.map((item) => item.name).join(", ")
+  balance.value = "$ " + data.value.balance.toLocaleString()
+  loading.value = false
 }
 
 onMounted(() => (
-    fetchData()
+  fetchData()
 ))
 
 </script>

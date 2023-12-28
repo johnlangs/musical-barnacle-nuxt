@@ -14,8 +14,6 @@ export default defineEventHandler(async (event) => {
         return tokenResponse.data;
     } catch (err) {
         console.log(err)
-        return {
-            
-        }
+        return err
     }
 })

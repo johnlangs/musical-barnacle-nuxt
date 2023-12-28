@@ -9,7 +9,7 @@ const config = new Configuration({
         "PLAID-SECRET": process.env.PLAID_SECRET,
         "Plaid-Version": "2020-09-14",
       },
-      adapter: fetchAdapter
+      // adapter: fetchAdapter
     },
 });
 

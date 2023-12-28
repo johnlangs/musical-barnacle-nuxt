@@ -1,5 +1,5 @@
 import { Products, CountryCode } from "plaid";
-import PlaidClient from '~/lib/plaid'
+import PlaidClient from '~/lib/plaid';
 
 export default defineEventHandler(async (event) => {
     try {

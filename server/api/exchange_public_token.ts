@@ -7,7 +7,6 @@ export default defineEventHandler(async (event) => {
         const exchangeResponse = await PlaidClient.itemPublicTokenExchange({
             public_token: token,
         });
-        console.log(exchangeResponse)
     }
     catch (err) {
         console.log(err)

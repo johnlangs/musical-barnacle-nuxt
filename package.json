@@ -15,6 +15,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@vespaiach/axios-fetch-adapter": "^0.3.1",
     "plaid": "^18.2.0"
   }
 }

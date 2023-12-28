@@ -1,4 +1,5 @@
 import { Configuration, PlaidApi, PlaidEnvironments } from "plaid";
+import fetchAdapter from "@vespaiach/axios-fetch-adapter";
 
 const config = new Configuration({
     basePath: PlaidEnvironments[process.env.PLAID_ENV!],
@@ -8,6 +9,7 @@ const config = new Configuration({
         "PLAID-SECRET": process.env.PLAID_SECRET,
         "Plaid-Version": "2020-09-14",
       },
+      adapter: fetchAdapter
     },
 });
 

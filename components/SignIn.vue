@@ -1,5 +1,5 @@
 <script setup lang="js">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const token = ref(null)
 const loading = ref(true)
@@ -33,7 +33,7 @@ onMounted(() => {
 
                 // Create a new link_token to initialize Link
 
-                token: (await $.post('/create_link_token')).link_token,
+                token: (await $.post('/api/create_link_token')).link_token,
 
                 onLoad: function() {
 
@@ -114,14 +114,12 @@ onMounted(() => {
           document.head.appendChild(customScript);
         };
       };
-    });
+});
 
 </script>
 
 <template>
-
     <button id="link-button">Link Account</button> 
-
 </template>
 
 

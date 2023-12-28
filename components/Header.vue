@@ -1,5 +1,5 @@
 <script setup lang="js">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import SignIn from './SignIn.vue';
 
 const balance = ref(0)

@@ -30,6 +30,9 @@ onMounted(() => (
         </thead>
         <tbody>
         <!-- row 1 -->
+        <tr v-if="loading">
+            <td>Loading . . .</td>
+        </tr>
         <tr v-for="t in transactions">
             <td>{{ "$ " + t.amount }}</td>
             <td>{{ t.account }}</td>

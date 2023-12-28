@@ -5,6 +5,7 @@
   <div>
     <Header></Header>
     <div class="global">
+      <SpendChart></SpendChart>
       <Transactions></Transactions>
     </div>
   </div>

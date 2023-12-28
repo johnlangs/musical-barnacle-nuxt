@@ -21,10 +21,10 @@ export default defineEventHandler(async (event) => {
       }
     } catch (err) {
         console.log(err);
-    }
-
-    return {
+    } finally {
+      return {
         number_of_transactions: transactions.length,
         transactions: transactions
+      }
     }
 })

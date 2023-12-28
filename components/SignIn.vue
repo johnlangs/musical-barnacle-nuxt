@@ -15,7 +15,7 @@ onMounted(() => {
       jQueryScript.onload = () => {
         console.log('jQuery is loaded:', window.jQuery);
 
-        // Now that jQuery is loaded, load Bootstrap from CDN
+        // Now that jQuery is loaded, load Plaid from CDN
         const plaidScript = document.createElement('script');
         plaidScript.src = 'https://cdn.plaid.com/link/v2/stable/link-initialize.js';
         plaidScript.async = true;
@@ -124,5 +124,15 @@ onMounted(() => {
 
 
 <style scoped>
-
+button {
+  border: 1px solid black;
+  border-radius: 5px;
+  background: black;
+  height: 48px;
+  width: 155px;
+  margin-top: 25px;
+  margin-left: 20;
+  color: white;
+  font-size: 18px;
+}
 </style>

@@ -1,12 +1,11 @@
 <script setup lang="js">
-import Header from './components/Header.vue';
 </script>
 
 <template>
   <div>
     <Header></Header>
     <div class="global">
-      
+      <Transactions></Transactions>
     </div>
   </div>
 </template>
@@ -25,7 +24,8 @@ import Header from './components/Header.vue';
 .cardTitle {
   font-size: 1.5em;
   font-weight: 400;
-  margin: inherit;
+  margin-top: 0.50rem;
+  margin-left: 1rem;
 }
 
 html,body { height: 100%; margin: 0px}

@@ -46,7 +46,7 @@ onMounted(() => (
 .HeaderContainer {
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   background-color: #F2A1FF;
   font-family: Inter;
 }
